@@ -1,21 +1,26 @@
 //@ts-check
 /* задание 2 раздела 5.3 */
 
+let inputValue;
+inputValue = true;
+// inputValue = 'dssdf';
+// inputValue = 20;
+// inputValue = null;
 
-const inputString = prompt('Введите число:');
-const numberInputValue = +inputString;
 
-if (typeof(inputString) == 'boolean') {
-    console.log('Тип ' + inputString + ' - логический');
-} else
-    if (!isNaN(numberInputValue)) {
-        console.log('Тип ' + inputString + ' - число');
-    } else if (typeof (numberInputValue) == 'string') {
-        console.log('Тип ' + inputString + ' - строка');
-
-    } else {
-        console.log('Тип ' + inputString + ' - не известен');
-    }
+switch (typeof(inputValue)) {
+    case 'string':
+        console.log(inputValue + ' - string');
+        break;
+    case 'boolean':
+        console.log(inputValue + ' - boolean');
+        break;
+    case 'number':
+        console.log(inputValue + ' - number');
+        break;
+    default:
+        console.log(inputValue + ' - unknown');    
+}
 
 
 
