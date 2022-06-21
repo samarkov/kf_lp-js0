@@ -1,14 +1,21 @@
-//@ts-check
+/* Задание 3. раздела 5.3
+Дана строка. Необходимо вывести в консоль перевёрнутый вариант. Например, "Hello" -> "olleH". */
 
-let firstName= 'Ivan';
-let lastName = 'Ivanov';
-function getFullName(strings, firstNameExp, lastNameExp) {
-let str0 = strings[0];// "My  first name is " 
-let str1 = strings[1]; // " and the last " 
-return `${str0}${firstNameExp}${str1}${lastNameExp}`;
-}
-let result= getFullName`My first name is ${ firstName} and the last ${ lastName }`;
-console.log(result);
+const inString = 'Hello';
+let outString = ' ';
+
+console.log(inString);
+
+for (let i=inString.length-1; i >= 0 ; i--) {
+    outString = outString + inString[i];
+} 
+
+console.log(outString);
+
+
+/* Задание 4. раздела 5.3
+   Записать в переменную случайное целое число в диапазоне [0; 100]. Используйте объект Math.*/
+
 
 
 

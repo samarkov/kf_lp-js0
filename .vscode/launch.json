@@ -5,28 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Chrome",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/app.js",
             "request": "launch",
-            "type": "chrome",
-            "url": "http://localhost:8080/${workspaceFolder}/index.html",
-            "webRoot": "${workspaceFolder}"
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
         },
-        {
-            "type": "firefox",
-            "request": "launch",
-            "reAttach": true,
-            "name": "Launch index.html",
-            "file": "${workspaceFolder}/index.html",
-            "pathMappings": [
-                {
-                    "url": "file:///C:",
-                    "path": "c:"
-                },
-                {
-                    "url": "file:///C:",
-                    "path": "c:"
-                }
-            ]
-        }
+    {
+        "type": "firefox",
+        "request": "launch",
+        "reAttach": true,
+        "name": "Launch index.html",
+        "file": "${workspaceFolder}/index.html"
+    }
     ]
 }
