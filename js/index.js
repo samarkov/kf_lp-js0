@@ -82,166 +82,192 @@ result = compareArray(randArray2);
 */
 
 
-        // Задание 5.
+// Задание 5.
 
-        // Дан произвольный массив. Необходимо вывести количество элементов массива, затем 
-        //перебрать его и вывести в консоль каждый элемент массива.
-        
-        /*
-        let randArray = [1,2,3,-3,'arrrr','book'];
+// Дан произвольный массив. Необходимо вывести количество элементов массива, затем 
+//перебрать его и вывести в консоль каждый элемент массива.
 
-        console.log(randArray.length);
+/*
+let randArray = [1,2,3,-3,'arrrr','book'];
 
-        randArray.forEach(element => {
-            console.log(element);
+console.log(randArray.length);
 
-        });
+randArray.forEach(element => {
+    console.log(element);
 
-        const mapArray = randArray.map(x => console.log(x));
+});
 
-        */
+const mapArray = randArray.map(x => console.log(x));
 
-        /* Задание 3. раздела 5.3
-        Дана строка. Необходимо вывести в консоль перевёрнутый вариант. Например, "Hello" -> "olleH". */
+*/
 
-        // const inString = 'Hello';
-        // let outString = '';
+/* Задание 3. раздела 5.3
+Дана строка. Необходимо вывести в консоль перевёрнутый вариант. Например, "Hello" -> "olleH". */
 
-        // console.log(inString);
+// const inString = 'Hello';
+// let outString = '';
 
-        // for (let i=inString.length-1; i >= 0 ; i--) {
-        //     outString = outString + inString[i];
-        // } 
+// console.log(inString);
 
-        // console.log(outString);
+// for (let i=inString.length-1; i >= 0 ; i--) {
+//     outString = outString + inString[i];
+// } 
 
-
-        /* Задание 4. раздела 5.3
-           Записать в переменную случайное целое число в диапазоне [0; 100]. Используйте объект Math.*/
-        // let randomNumber = Math.trunc(Math.random()*100);
-        // console.log(`Случайное число: ${randomNumber}`); 
+// console.log(outString);
 
 
-        /* задание 2 раздела 5.3 
-
-        let inputValue;
-        inputValue = true;
-        // inputValue = 'dssdf';
-        // inputValue = 20;
-        // inputValue = null;
+/* Задание 4. раздела 5.3
+   Записать в переменную случайное целое число в диапазоне [0; 100]. Используйте объект Math.*/
+// let randomNumber = Math.trunc(Math.random()*100);
+// console.log(`Случайное число: ${randomNumber}`); 
 
 
-        switch (typeof(inputValue)) {
-            case 'string':
-                console.log(inputValue + ' - string');
-                break;
-            case 'boolean':
-                console.log(inputValue + ' - boolean');
-                break;
-            case 'number':
-                console.log(inputValue + ' - number');
-                break;
-            default:
-                console.log(inputValue + ' - unknown');    
+/* задание 2 раздела 5.3 
+
+let inputValue;
+inputValue = true;
+// inputValue = 'dssdf';
+// inputValue = 20;
+// inputValue = null;
+
+
+switch (typeof(inputValue)) {
+    case 'string':
+        console.log(inputValue + ' - string');
+        break;
+    case 'boolean':
+        console.log(inputValue + ' - boolean');
+        break;
+    case 'number':
+        console.log(inputValue + ' - number');
+        break;
+    default:
+        console.log(inputValue + ' - unknown');    
+}
+
+*/
+
+
+
+
+/* задание 1 раздел 5.3
+const inputString = prompt('Введите число:');
+const castInputValue = +inputString;
+
+if (isNaN(castInputValue)) {
+    console.log('Упс, кажется вы ошиблись, "' + inputString + '" не является числом' );
+} else  {
+        const resultOdd = (castInputValue % 2 === 0);
+        if (castInputValue % 2 === 0) {
+            console.log('Число ' + inputString + ' - четное')
+        }  else {
+            console.log('Число ' + inputString + ' - нечетное');
         }
+    }
 
-        */
-
-
-
-
-        /* задание 1 раздел 5.3
-        const inputString = prompt('Введите число:');
-        const castInputValue = +inputString;
-
-        if (isNaN(castInputValue)) {
-            console.log('Упс, кажется вы ошиблись, "' + inputString + '" не является числом' );
-        } else  {
-                const resultOdd = (castInputValue % 2 === 0);
-                if (castInputValue % 2 === 0) {
-                    console.log('Число ' + inputString + ' - четное')
-                }  else {
-                    console.log('Число ' + inputString + ' - нечетное');
-                }
-            }
-
-        */
+*/
 
 
-        /* Задание 5
+/* Задание 5
 
-        const NDS  = 0.20;
-        const NDFL = 0.13;
-        const EXCISE = 0.1;
-        const RENT = 40000;
-        const FOOD = 15000;
-        const OTHER = 15000;
-        const MY_SALARY = 120000;
-        let ndflTax;
-        let mySalaryNet;
-        let otherTaxes;
-        let totalAvailable;
-
-
-        ndflTax = MY_SALARY * NDFL;
-        mySalaryNet = MY_SALARY - ndflTax;
-        otherTaxes = mySalaryNet * (NDS + EXCISE);
-        totalAvailable = mySalaryNet - otherTaxes;
-        totalAvailable -= FOOD + OTHER + RENT
-        alert('Зарплата ' + MY_SALARY + ' рублей')
-        alert('Уплачено налогов на сумму ' + (ndflTax + otherTaxes) + ' рублей')
-        alert('Осталось ' + totalAvailable + ' рублей')
-        */
-
-        /* Задание 4 
-        a = 12;
-        b = 'number';
-        c = false;
-        d = null;
-        e = undefined;
-        f = 123.34;
-        g = '1' + 1;
-        h = 15 / 0;
-        i = -'5';
-        j = 5 == '5'
-
-        at = typeof a === 'number'; // true
-        bt = typeof b === 'string'; // false, а нужно чтобы все были true
-        ct = typeof c === 'boolean';
-        dt = typeof d === 'object';
-        et = typeof e === 'undefined';
-        ft = typeof f === 'number';
-        gt = typeof g === 'string';
-        ht = typeof h === 'number';
-        it = typeof i === 'number';
-        jt = typeof j === 'boolean';
-
-        alert(at && bt && ct && dt && et && ft && gt && ht && it && jt);
-        */
-
-        /* Задание 3 
-        let x = prompt('Введите занчение X');
-        let x2 = Math.pow(x,2);
-        let x3 = Math.pow(x,3);
-        let val = Math.round(((((4*x2) + 18 - (23*x))/(5/9*x + 18*x3/33*x))+x*15/12)*10000)/10000;
-        alert('Результат расчета формулы = ' + val);
-        */
-
-        /* Задание 2 
-        let cTemp = ;
-        alert(cTemp + ' градусов по Цельсию равны ' + ((cTemp*9/5)+32) + ' градусам по Фаренгейту.');
-
-        или 
-
-        alert(prompt('Введите значение температуры в C') + ' градусов по Цельсию равны ' + ((cTemp*9/5)+32) + ' градусам по Фаренгейту.'); */
+const NDS  = 0.20;
+const NDFL = 0.13;
+const EXCISE = 0.1;
+const RENT = 40000;
+const FOOD = 15000;
+const OTHER = 15000;
+const MY_SALARY = 120000;
+let ndflTax;
+let mySalaryNet;
+let otherTaxes;
+let totalAvailable;
 
 
-        
+ndflTax = MY_SALARY * NDFL;
+mySalaryNet = MY_SALARY - ndflTax;
+otherTaxes = mySalaryNet * (NDS + EXCISE);
+totalAvailable = mySalaryNet - otherTaxes;
+totalAvailable -= FOOD + OTHER + RENT
+alert('Зарплата ' + MY_SALARY + ' рублей')
+alert('Уплачено налогов на сумму ' + (ndflTax + otherTaxes) + ' рублей')
+alert('Осталось ' + totalAvailable + ' рублей')
+*/
+
+/* Задание 4 
+a = 12;
+b = 'number';
+c = false;
+d = null;
+e = undefined;
+f = 123.34;
+g = '1' + 1;
+h = 15 / 0;
+i = -'5';
+j = 5 == '5'
+
+at = typeof a === 'number'; // true
+bt = typeof b === 'string'; // false, а нужно чтобы все были true
+ct = typeof c === 'boolean';
+dt = typeof d === 'object';
+et = typeof e === 'undefined';
+ft = typeof f === 'number';
+gt = typeof g === 'string';
+ht = typeof h === 'number';
+it = typeof i === 'number';
+jt = typeof j === 'boolean';
+
+alert(at && bt && ct && dt && et && ft && gt && ht && it && jt);
+*/
+
+/* Задание 3 
+let x = prompt('Введите занчение X');
+let x2 = Math.pow(x,2);
+let x3 = Math.pow(x,3);
+let val = Math.round(((((4*x2) + 18 - (23*x))/(5/9*x + 18*x3/33*x))+x*15/12)*10000)/10000;
+alert('Результат расчета формулы = ' + val);
+*/
+
+/* Задание 2 
+let cTemp = ;
+alert(cTemp + ' градусов по Цельсию равны ' + ((cTemp*9/5)+32) + ' градусам по Фаренгейту.');
+
+или 
+
+alert(prompt('Введите значение температуры в C') + ' градусов по Цельсию равны ' + ((cTemp*9/5)+32) + ' градусам по Фаренгейту.'); */
+
+
+/* Задание 2 
+Дана переменная Х, которая может принимать любое значение. Написать программу, которая в зависимости
+от типа данных Х выводит в консоль сообщение вида: «X — число». 
+Опишите три случая: когда х = числу, строке или логическому типу. 
+В других случаях выводите сообщение: «Тип x не определён».
+*/
+
+function checkType(x) {
+    constxType = typeof (x);
+    switch (constxType) {
+        case 'number':
+            console.log(x + ' - число');
+            break;
+        case 'string':
+            console.log(x + ' - строка');
+            break;
+        case 'boolean':
+            console.log(x + ' - логический');
+            break;
+        default:
+            console.log('Тип x не определён');
+    }
+}
+checkType(true);
+checkType(1);
+checkType('sdfs');
+
 
 // Задание 1.
 
-// Напишите программу, которая работала бы следующим образом: в prompt вводится значение. 
-// С помощью унарного плюса (арифметический оператор) необходимо преобразовать его в число, 
+// Напишите программу, которая работала бы следующим образом: в prompt вводится значение.
+// С помощью унарного плюса (арифметический оператор) необходимо преобразовать его в число,
 // затем проверить с помощью typeof, принадлежит ли оно к множеству Number.
 
 // Если это число, то вывести в консоль чётное оно или нечётное.
@@ -250,6 +276,7 @@ result = compareArray(randArray2);
 
 // *NaN, хоть и относится к типу Number, числом не является. Добавьте отдельную проверку для этого значения.
 
+/*
 let x = prompt('Введите занчение X');
 
 let y = +x;
@@ -261,3 +288,4 @@ if (typeof(y) == 'number' && !isNaN(y) ) {
 } else {
     console.log('Упс, кажется, вы ошиблись');
 }
+*/
