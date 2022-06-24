@@ -1,38 +1,103 @@
+
+
+// Задание 8.
+
+// Создайте произвольный массив Map. Получите его ключи и выведите в консоль все значения в виде «Ключ — Х, значение — Y».
+
+// Используйте шаблонные строки.
+
+let mapArr = new Map([
+    ['animal', 'cat'],
+    ['age',1],
+    ['color','red'],
+    ['name','Nia'],
+    ['vaccination','yes']
+])
+console.log('Map array consist:');
+for (let item of mapArr) {
+    console.log(`${item[0]}: ${mapArr.get(item[0])}`)
+}
+
+
+//Задание 7.
+
+//Дан массив. Нужно вывести в консоль количество чётных и нечётных элементов в массиве.
+//Если в массиве есть нулевой элемент, то он учитывается и выводится отдельно. 
+
+//При выполнении задания необходимо учесть, что массив может содержать не только числа,
+// но и, например, знаки, null и так далее.
+
+/*
+let result = false;
+let randArray1 = [1, 2, 3, -3, 'arrrr', 'book'];
+let randArray2 = [1,0,1,0,1,2,14,1,1,4,1,1,8];
+
+
+function findOdd(arr) {
+    let countOddNumbers = 0;
+    let countEvenNumbers = 0;
+    let countZeroNumbers = 0;
+    for (i = 0; i < arr.length; i++) {
+        if (!isNaN(arr[i])) {   //отбрасываем все не числа
+         
+            arr[i] % 2 !== 0 ? ++countOddNumbers : ++countEvenNumbers;
+            
+            if (arr[i] === 0) {++countZeroNumbers};
+        }
+    }
+    console.log('четных:' + countEvenNumbers + ' нечетных:' + countOddNumbers + ' нулей: ' + countZeroNumbers);
+    return true;
+}
+
+result = findOdd(randArray1);
+result = findOdd(randArray2);
+*/
+
+
 // Задание 6.
 
 // Дан массив. Проверить, одинаковые ли элементы в массиве и вывести результат true или false в консоль.
 // Речь идёт не о двух рядом стоящих одинаковых элементах, а обо всех. Проверить, все ли элементы в массиве одинаковые.
+/*
+let result = false;
+let randArray1 = [1, 2, 3, -3, 'arrrr', 'book'];
+let randArray2 = [1,1,1,1,1,1,1,1,1,1,1,1,1];
 
-// let randArray = [1, 2, 3, -3, 'arrrr', 'book'];
-let randArray = [1, ,1,1,1,1,1,1,1,1,1,1,1];
 
-
-
-            for (i = 0; i < randArray.length; i++) {
-                if ((randArray[i] != randArray[i + 1])) {
-                    console.log('False');
-                    break;
+        function compareArray(arr) {
+            for (i = 0; i < arr.length; i++) {
+                if ((arr[i] != arr[i + 1])) {
+                    console.log('Found diff elemen i:'+i+ ' '+ arr[i] +' != '+ arr[i + 1]);
+                    return false;
                 }
-                console.log('True');
+                console.log('All element are identical');
+                return true;
             }
+        }
 
+result = compareArray(randArray1);
+result = compareArray(randArray2);
+*/
 
 
         // Задание 5.
 
         // Дан произвольный массив. Необходимо вывести количество элементов массива, затем 
         //перебрать его и вывести в консоль каждый элемент массива.
+        
+        /*
+        let randArray = [1,2,3,-3,'arrrr','book'];
 
-        // let randArray = [1,2,3,-3,'arrrr','book'];
+        console.log(randArray.length);
 
-        // console.log(randArray.length);
+        randArray.forEach(element => {
+            console.log(element);
 
-        // randArray.forEach(element => {
-        //     console.log(element);
+        });
 
-        // });
+        const mapArray = randArray.map(x => console.log(x));
 
-        // const mapArray = randArray.map(x => console.log(x));
+        */
 
         /* Задание 3. раздела 5.3
         Дана строка. Необходимо вывести в консоль перевёрнутый вариант. Например, "Hello" -> "olleH". */
